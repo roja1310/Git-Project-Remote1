@@ -1,0 +1,345 @@
+Remote repo:
+===========
+
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ git --version
+git version 2.47.1.windows.2
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ git config --global user.name "roja1310"
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ git config --global user.email "rojaputtha13@gmail.com"
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ git conifg --global --list
+git: 'conifg' is not a git command. See 'git --help'.
+
+The most similar command is
+        config
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ git config --global --list
+user.name=roja1310
+user.email=rojaputtha13@gmail.com
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ mkdir git-course
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ cd git-course/
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ ls
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ echo "# git-course demo" >> README.md
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ ls
+README.md
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ cat README.md
+# git-course demo
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ git init
+Initialized empty Git repository in C:/Users/hputtroj/git-course/.git/
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (master)
+$ ls
+README.md
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (master)
+$ ls -a
+./  ../  .git/  README.md
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (master)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the nex
+t time Git touches it
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   README.md
+
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (master)
+$ git commit -m "first commit"
+[master (root-commit) b1e1c74] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (master)
+$ git branch -M main
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ ssh-keygen -o
+Generating public/private ed25519 key pair.
+Enter file in which to save the key (C:\Users\hputtroj/.ssh/id_ed25519):
+Created directory 'C:\\Users\\hputtroj/.ssh'.
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in C:\Users\hputtroj/.ssh/id_ed25519
+Your public key has been saved in C:\Users\hputtroj/.ssh/id_ed25519.pub
+The key fingerprint is:
+SHA256:+qSeu2PVs6rifP14Droue7DBD3TQLwh+Fj2w+T5ZjSk ant\hputtroj@MAA2-5CG039BR3H
+The key's randomart image is:
++--[ED25519 256]--+
+|    .+           |
+|  . oo+          |
+| . .o+ o         |
+|  . =.o .+       |
+|   = .E.S..      |
+|    =. =. o      |
+|     *=oo  o     |
+|   .+ *B.oo      |
+|   .+X@*+=o      |
++----[SHA256]-----+
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ cd
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ ls
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Cypress_logs_G0B323013244008W_ship7565_4418.zip
+ Cypress_ship7565_4418.txt
+ Cypress_ship7565_4418.txt.txt
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Greta_logs_G4L11P009265001X_2024-10-07_mainline_4008.zip
+ Karat_logs_G072JM022464002N_P_S_ship_8119_2479.zip
+ Keira_logs_G2Q0SN0074460018_2024-09-11_build5040.zip
+ Links/
+'Local Settings'@
+ Mantis_logs_G070VM0584120AAH_P_S_ship_6706_5468/
+ Mantis_logs_G070VM0584120AAH_P_S_ship_6706_5468.zip
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{b9ceb143-1301-11ef-9662-00155ddeec31}.TM.blf
+ NTUSER.DAT{b9ceb143-1301-11ef-9662-00155ddeec31}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{b9ceb143-1301-11ef-9662-00155ddeec31}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ Pictures/
+ PrintHood@
+ Privacy_Script.zip
+ Privacy_Script_V.2/
+ Privacy_Script_V.2.zip
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sheldon_logs_G071EL030126006H_P_S_ship7681_4370/
+ Sheldon_logs_G071EL030126006H_P_S_ship7681_4370.zip
+ Shiba_logs_G4H3L80040840050_Ship_8200_2501/
+ Shiba_logs_G4H3L80040840050_Ship_8200_2501.zip
+'Start Menu'@
+ Sycamore_logs_G0B3GD013393002P_ship7565_4418.zip
+ Templates@
+ Videos/
+ duckie_logs_G2Q18S009484000U_2024-09-11build_3949.zip
+ eclipse-workspace/
+ git-course/
+ noleak.PNG
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ output_file.txt
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ cd .ssh/
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/.ssh (main)
+$ ls -a
+./  ../  id_ed25519  id_ed25519.pub
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/.ssh (main)
+$ cd
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ ls -a
+ ./
+ ../
+ .android/
+ .bash_history
+ .cache/
+ .cisco/
+ .eclipse/
+ .git/
+ .gitconfig
+ .idlerc/
+ .lesshst
+ .p2/
+ .ssh/
+ .vscode/
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Cypress_logs_G0B323013244008W_ship7565_4418.zip
+ Cypress_ship7565_4418.txt
+ Cypress_ship7565_4418.txt.txt
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Greta_logs_G4L11P009265001X_2024-10-07_mainline_4008.zip
+ Karat_logs_G072JM022464002N_P_S_ship_8119_2479.zip
+ Keira_logs_G2Q0SN0074460018_2024-09-11_build5040.zip
+ Links/
+'Local Settings'@
+ Mantis_logs_G070VM0584120AAH_P_S_ship_6706_5468/
+ Mantis_logs_G070VM0584120AAH_P_S_ship_6706_5468.zip
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{b9ceb143-1301-11ef-9662-00155ddeec31}.TM.blf
+ NTUSER.DAT{b9ceb143-1301-11ef-9662-00155ddeec31}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{b9ceb143-1301-11ef-9662-00155ddeec31}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ Pictures/
+ PrintHood@
+ Privacy_Script.zip
+ Privacy_Script_V.2/
+ Privacy_Script_V.2.zip
+ PycharmProjects/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ Sheldon_logs_G071EL030126006H_P_S_ship7681_4370/
+ Sheldon_logs_G071EL030126006H_P_S_ship7681_4370.zip
+ Shiba_logs_G4H3L80040840050_Ship_8200_2501/
+ Shiba_logs_G4H3L80040840050_Ship_8200_2501.zip
+'Start Menu'@
+ Sycamore_logs_G0B3GD013393002P_ship7565_4418.zip
+ Templates@
+ Videos/
+ duckie_logs_G2Q18S009484000U_2024-09-11build_3949.zip
+ eclipse-workspace/
+ git-course/
+ noleak.PNG
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+ output_file.txt
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ cd .ssh/
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/.ssh (main)
+$ ls -a
+./  ../  id_ed25519  id_ed25519.pub
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/.ssh (main)
+$ cat id_ed25519
+id_ed25519      id_ed25519.pub
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/.ssh (main)
+$ cat id_ed25519.pub
+ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIr0RoUaFNQRbUbnqo70Lwzng/1rphv9TKZ1ZRyAqEQg ant\hputtroj@MAA2-5CG039BR3H
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/.ssh (main)
+$ ccd
+bash: ccd: command not found
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/.ssh (main)
+$ cd
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ cd git-course/
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ ls -a
+./  ../  .git/  README.md
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ git remote add origin git@github.com:roja1310/Git-Project-Remote1.git
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ git push -u origin main
+The authenticity of host 'github.com (4.208.26.197)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])?
+Please type 'yes', 'no' or the fingerprint:
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 229 bytes | 76.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:roja1310/Git-Project-Remote1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~/git-course (main)
+$
+
+
+--------------------------------------------------------------
+PS C:\Users\hputtroj\git-course> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        UserService.txt
+nothing added to commit but untracked files present (use "git add" to track)
+PS C:\Users\hputtroj\git-course> git add .
+PS C:\Users\hputtroj\git-course> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   UserService.txt
+
+PS C:\Users\hputtroj\git-course> git commit -m "user service created"
+[main 0a29e84] user service created
+ 1 file changed, 1 insertion(+)
+ create mode 100644 UserService.txt
+PS C:\Users\hputtroj\git-course> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 76.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:roja1310/Git-Project-Remote1.git
+   b1e1c74..0a29e84  main -> main
