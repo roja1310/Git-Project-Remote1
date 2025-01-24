@@ -1,0 +1,14 @@
+Cloning & Forking
+-=============
+
+hputtroj@MAA2-5CG039BR3H MINGW64 ~ (main)
+$ git clone https://github.com/microsoft/vscode.git
+Cloning into 'vscode'...
+remote: Enumerating objects: 1688766, done.
+remote: Counting objects: 100% (1174/1174), done.
+remote: Compressing objects: 100% (494/494), done.
+remote: Total 1688766 (delta 993), reused 693 (delta 679), pack-reused 1687592 (
+from 3)
+Receiving objects: 100% (1688766/1688766), 953.68 MiB | 2.39 MiB/s, done.
+Resolving deltas: 100% (1091660/1091660), done.
+Updating files: 100% (7887/7887), done.
