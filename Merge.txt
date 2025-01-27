@@ -1,0 +1,316 @@
+Date:   Thu Jan 23 18:12:34 2025 +0530
+
+diff --git a/remote-repro-commands.txt b/remote-repro-commands.txt
+new file mode 100644
+index 0000000..0ba62de
+PS C:\Users\hputtroj\git-course> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+        modified:   UserService.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\hputtroj\git-course> git add . 
+PS C:\Users\hputtroj\git-course> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+
+PS C:\Users\hputtroj\git-course> git commit -m "processing userdata"       
+[main 434838d] processing userdata
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+PS C:\Users\hputtroj\git-course> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 290 bytes | 17.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.       
+To github.com:roja1310/Git-Project-Remote1.git
+   6a17f08..434838d  main -> main
+PS C:\Users\hputtroj\git-course> git tag -a v1.1 -m "23 Jan Release"       
+PS C:\Users\hputtroj\git-course> git show v1.1                             
+tag v1.1
+Tagger: roja1310 <rojaputtha13@gmail.com>
+Date:   Thu Jan 23 18:29:55 2025 +0530
+
+23 Jan Release
+
+commit 434838d22f839da6717b805c64841ac023264013 (HEAD -> main, tag: v1.1, o
+Tagger: roja1310 <rojaputtha13@gmail.com>
+Date:   Thu Jan 23 18:29:55 2025 +0530
+
+23 Jan Release
+
+commit 434838d22f839da6717b805c64841ac023264013 (HEAD -> main, tag: v1.1, o
+Author: roja1310 <rojaputtha13@gmail.com>
+Date:   Thu Jan 23 18:27:43 2025 +0530
+
+    processing userdata
+
+diff --git a/UserService.txt b/UserService.txt
+--- a/UserService.txt
+PS C:\Users\hputtroj\git-course> git push origin v1.0                      
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 160 bytes | 26.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:roja1310/Git-Project-Remote1.git
+ * [new tag]         v1.0 -> v1.0
+PS C:\Users\hputtroj\git-course> git push origin v1.1
+Writing objects: 100% (1/1), 165 bytes | 55.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:roja1310/Git-Project-Remote1.git
+ * [new tag]         v1.1 -> v1.1
+PS C:\Users\hputtroj\git-course> git status                                
+On branch main
+Your branch is up to date with 'origin/main'.
+Changes not staged for commit:
+  (use "git restore <file>..." to discard changes in working directory)    
+        modified:   remote-repro-commands.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\hputtroj\git-course> git add .                                 
+PS C:\Users\hputtroj\git-course> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   remote-repro-commands.txt
+PS C:\Users\hputtroj\git-course> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+  (use "git add <file>..." to include in what will be committed)
+        Cloning_forking_commands.txt
+
+)
+PS C:\Users\hputtroj\git-course> git add .
+PS C:\Users\hputtroj\git-course> git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   Cloning_forking_commands.txt
+
+PS C:\Users\hputtroj\git-course> git commit -m "adding cloning commands in text"
+[main 026ad3d] adding cloning commands in text
+ 1 file changed, 14 insertions(+)
+ create mode 100644 Cloning_forking_commands.txt
+PS C:\Users\hputtroj\git-course> git push origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 690 bytes | 76.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:roja1310/Git-Project-Remote1.git
+   1dc618f..026ad3d  main -> main
+PS C:\Users\hputtroj\git-course>
+ *  History restored 
+
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+nothing to commit, working tree clean
+nothing to commit, working tree clean
+PS C:\Users\hputtroj\git-course> git branch
+  main
+PS C:\Users\hputtroj\git-course> git status
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)    
+        modified:   UserService.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\hputtroj\git-course> git add UserService.txt  
+PS C:\Users\hputtroj\git-course> git commit -m "experimenting with user avatar"
+[feature1 350baec] experimenting with user avatar
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\hputtroj\git-course> git log
+Author: roja1310 <rojaputtha13@gmail.com>
+Date:   Mon Jan 27 19:09:26 2025 +0530
+    experimenting with user avatar
+commit 026ad3d5d3143da394c2f249a46a1892973e9447 (origin/main, main)        
+Author: roja1310 <rojaputtha13@gmail.com>
+
+
+PS C:\Users\hputtroj\git-course> git checkout main
+Switched to branch 'main'
+PS C:\Users\hputtroj\git-course> git checkout feature1
+Switched to branch 'feature1'
+PS C:\Users\hputtroj\git-course> git checkout main    
+Switched to branch 'main'
+PS C:\Users\hputtroj\git-course> git checkout -b feature2
+Switched to a new branch 'feature2'
+PS C:\Users\hputtroj\git-course> git branch
+* feature2
+  main
+  feature1
+  main
+  remotes/origin/main
+  feature1
+* feature2
+PS C:\Users\hputtroj\git-course> git switch -
+Your branch is up to date with 'origin/main'.
+PS C:\Users\hputtroj\git-course> git switch -
+PS C:\Users\hputtroj\git-course> git branch -d feature2
+oj/git-course'
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+Deleted branch feature2 (was 026ad3d).
+PS C:\Users\hputtroj\git-course> git branch
+  feature1
+* main
+PS C:\Users\hputtroj\git-course> git branch feature1
+fatal: a branch named 'feature1' already exists
+PS C:\Users\hputtroj\git-course> git checkout feature1
+* feature1
+  main
+PS C:\Users\hputtroj\git-course> git status
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+nothing added to commit but untracked files present (use "git add" to trackPS C:\Users\hputtroj\git-course> git add adminService.txt  
+PS C:\Users\hputtroj\git-course> git commit -m "adding admin Service"      
+ 1 file changed, 2 insertions(+)
+PS C:\Users\hputtroj\git-course> git status                                
+On branch feature1
+PS C:\Users\hputtroj\git-course> git branch                                
+* feature1
+  main
+PS C:\Users\hputtroj\git-course> git checkout main                         
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\hputtroj\git-course> git checkout feature1                     
+Switched to branch 'feature1'
+PS C:\Users\hputtroj\git-course> git branch
+* feature1
+  main
+PS C:\Users\hputtroj\git-course> git push origin feature1
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (6/6), 591 bytes | 29.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.       
+remote:
+remote:      https://github.com/roja1310/Git-Project-Remote1/pull/new/featuremote:
+To github.com:roja1310/Git-Project-Remote1.git
+ * [new branch]      feature1 -> feature1
+PS C:\Users\hputtroj\git-course> git graph
+git: 'graph' is not a git command. See 'git --help'.
+
+The most similar commands are
+        branch
+        grep
+PS C:\Users\hputtroj\git-course> git log--graph
+git: 'log--graph' is not a git command. See 'git --help'.
+PS C:\Users\hputtroj\git-course> git log --graph
+* commit 063c9065aeafcc1e1f255c294c4fa7e4ed931a0c (HEAD -> feature1, origin/feature1)
+| Author: roja1310 <rojaputtha13@gmail.com>
+| Date:   Mon Jan 27 20:00:16 2025 +0530
+|
+|     adding admin Service
+|
+* commit 350baec54dabbc4bc25a0d7ab6fc6ccba4ebee62
+| Author: roja1310 <rojaputtha13@gmail.com>
+| Date:   Mon Jan 27 19:09:26 2025 +0530
+|
+|     experimenting with user avatar
+|
+* commit 026ad3d5d3143da394c2f249a46a1892973e9447 (origin/main, main)      
+| Author: roja1310 <rojaputtha13@gmail.com>
+| Date:   Fri Jan 24 11:14:24 2025 +0530
+|
+|     adding cloning commands in text
+|
+* commit 1dc618fb160427fce12a0569879604d5bc77f2ec
+| Author: roja1310 <rojaputtha13@gmail.com>
+| Date:   Thu Jan 23 18:37:21 2025 +0530
+|
+* commit 1dc618fb160427fce12a0569879604d5bc77f2ec
+| Author: roja1310 <rojaputtha13@gmail.com>
+| Date:   Thu Jan 23 18:37:21 2025 +0530
+|
+| 
+* commit 1dc618fb160427fce12a0569879604d5bc77f2ec
+
+
+
+|
+* commit 1dc618fb160427fce12a0569879604d5bc77f2ec
+| Author: roja1310 <rojaputtha13@gmail.com>
+| Date:   Thu Jan 23 18:37:21 2025 +0530
+| Date:   Thu Jan 23 18:37:21 2025 +0530
+| 
+* commit 1dc618fb160427fce12a0569879604d5bc77f2ec
+| 
+| Author: roja1310 <rojaputtha13@gmail.com>
+| Date:   Thu Jan 23 18:37:21 2025 +0530
+| 
+|     Adding all commands in one text file
+* commit 434838d22f839da6717b805c64841ac023264013 (tag: v1.1)
+| Author: roja1310 <rojaputtha13@gmail.com>
+| 
+|     processing userdata
+* commit 6a17f083687c882532906a0f499d92ddfda75eb2 (tag: v1.0)
+| Author: roja1310 <rojaputtha13@gmail.com>
+PS C:\Users\hputtroj\git-course>
+PS C:\Users\hputtroj\git-course> git beanch
+git: 'beanch' is not a git command. See 'git --help'.
+
+        branch
+PS C:\Users\hputtroj\git-course> git branch
+* feature1
+  main
+PS C:\Users\hputtroj\git-course> git switch main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\hputtroj\git-course> git merge feature1
+Updating 026ad3d..063c906
+Fast-forward
+ UserService.txt  | 4 +++-
+ adminService.txt | 2 ++
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 adminService.txt
+PS C:\Users\hputtroj\git-course> git log
+commit 063c9065aeafcc1e1f255c294c4fa7e4ed931a0c (HEAD -> main, origin/feature1, feature1)
+Author: roja1310 <rojaputtha13@gmail.com>
+re1, feature1)
+Author: roja1310 <rojaputtha13@gmail.com>
+
+
+commit 063c9065aeafcc1e1f255c294c4fa7e4ed931a0c (HEAD -> main, origin/featu 
+
+re1, feature1)
+re1, feature1)
+
+commit 063c9065aeafcc1e1f255c294c4fa7e4ed931a0c (HEAD -> main, origin/feature1, feature1)
+commit 063c9065aeafcc1e1f255c294c4fa7e4ed931a0c (HEAD -> main, origin/featucommit 063c9065aeafcc1e1f255c294c4fa7e4ed931a0c (HEAD -> main, origin/featuAuthor: roja1310 <rojaputtha13@gmail.com>
+Date:   Mon Jan 27 20:00:16 2025 +0530
+
+    adding admin Service
+
+commit 350baec54dabbc4bc25a0d7ab6fc6ccba4ebee62
+Author: roja1310 <rojaputtha13@gmail.com>
+Date:   Mon Jan 27 19:09:26 2025 +0530
+
+    experimenting with user avatar
+
+PS C:\Users\hputtroj\git-course> git pull origin main^C
+PS C:\Users\hputtroj\git-course> git push origin main
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To github.com:roja1310/Git-Project-Remote1.git
+   026ad3d..063c906  main -> main
+PS C:\Users\hputtroj\git-course>
